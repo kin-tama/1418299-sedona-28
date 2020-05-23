@@ -13,7 +13,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
         </ul>
-          <img src="Logo_Sedona.svg" width="100" height="100" alt="Логотип SEDONA">
+          <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA">
         <ul>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
@@ -26,22 +26,22 @@
       <section>
         <!--Здесь будет фильтр с гостиницами -->
         <span>Найдено:</span> <span>3</span><br>
-        <h3>Сортировка:</h3>
+        <h3 class="visually-hidden">Сортировка:</h3>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><button type="button" name="sort-price">По цене</button></li>
+            <li><button type="button" name="sort-type">По типу</button></li>
+            <li><button type="button" name="sort-rating">По рейтингу</button></li>
           </ul>
         <button type="button">найти</button>
       </section>
 
       <section>
-        <h1>Каталог гостиниц</h1>
+        <h1 class="visually-hidden">Каталог гостиниц</h1>
           <ul>
             <li>
               <img src="img/amara.jpg" alt="Amara Resort & Spa" width="135" height="90">
               <h2>Amara Resort & Spa</h2>
-              <p> <span>Гостиница</span> <span> От 4000 Р.</span></p> <!-- не уверен, что это нужно делать это двумя абзацами, но как иначе разделить Стоимость и Тип отеля я не понимаю-->
+              <p> <span>Гостиница</span> <span> От 4000 Р.</span></p>
               <button type="button">Подробнее</button>
               <button type="button">Забронировать</button>
               <p>Рейтинг: 8,5</p>
@@ -49,7 +49,7 @@
             <li>
               <img src="img/desert-q-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
               <h2>Desert Quail Inn</h2>
-              <p><span>Мотель</span> <span> От 3000 Р.</span></p> <!-- см коммент выше -->
+              <p><span>Мотель</span> <span> От 3000 Р.</span></p>
               <button type="button">Подробнее</button>
               <button type="button">Забронировать</button>
               <p>Рейтинг: 8,9</p>
@@ -75,15 +75,15 @@
       <section>
         <h2>Мы в социальных сетях</h2> <!-- Лектор говорил про доступность и заголовки, которые потом можно будет спрятать-->
         <ul>
-          <li><a href="https://twitter.com/"> Twitter </a></li>
-          <li><a href="https://ru-ru.facebook.com/"> Facebook </a></li>
-          <li><a href="https://www.youtube.com/"> Youtube </a></li>
+          <li><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
+          <li><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
+          <li><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
         </ul>
       </section>
 
       <section>
         <p>website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="XXX.svg" width="100" height="100" alt="Логотип htmlacademy"></a></p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="svg/logo-htmlacademy.svg" width="100" height="100" alt="Логотип htmlacademy"></a></p>
       </section>
     </footer>
 

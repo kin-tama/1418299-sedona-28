@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -11,9 +12,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
         </ul>
-        <!--В ТЗ прочитал, что лого должен быть отдельным элементом, а не пунктом меню.
-        Выделил его исходя из текущего понимания-->
-          <img src="Logo_Sedona.svg" width="100" height="100" alt="Логотип SEDONA">
+          <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA">
         <ul>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
@@ -23,8 +22,8 @@
 
     <main>
       <section>
-        <h1> Приветствие </h1><!-- Лектор говорил про доступность и заголовки, которые потом можно будет спрятать-->
-        <img src="png/welcome.png" alt="Welcome to the gorgeous SEDONA">
+        <h1 class="visually-hidden"> Приветствие </h1><!-- Указал класс "visually-hidden"-->
+        <img src="png/welcome.png" alt="Welcome to the gorgeous SEDONA because grand canyon sucks" width="456.65" height="350.88">
       </section>
 
       <section>
@@ -35,10 +34,10 @@
 
       <section>
 
-        <h1>Пять причин:</h1>
+        <h1 class="visually-hidden">Пять причин:</h1> <!-- Указал класс "visually-hidden"-->
         <ol>
           <li>
-            <p><span>настоящий <br> городок </span> <br>
+            <p><span>настоящий <br>городок</span> <br>
              <span> - №1 - <br>
                 Седона - не аттракцион для туристов, там <br>
                 течёт своя жизнь</span> </p>
@@ -48,19 +47,19 @@
           <h1>Список рекомендаций</h1>
             <ul>
               <li>
-                <span>Иконка дома</span>
+                <span><img src="svg/icon-1.svg" alt="Иконка дом"></span>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем <br>
                     мотеле, как в кино </p>
               </li>
               <li>
-                <span>Иконка еды</span>
+                <span><img src="svg/icon-3.svg" alt="Иконка бургер"></span>
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер,<br>
                     вы не разочаруетесь! </p>
               </li>
               <li>
-                <span>Иконка сувенира</span>
+                <span><img src="svg/icon-2.svg" alt="Иконка сувенир"></span>
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного <br>
                   производства!</p>
@@ -97,15 +96,15 @@
               и толпится там </span></p>
           </li>
         </ol>
-
       </section>
+
       <section>
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </section>
 
-      <section> <!--В ТЗ написано: ""Блок карты: достаточная реализация — обычное изображение"" -->
+      <section> <!--В ТЗ написано: "Блок карты: достаточная реализация — обычное изображение"-->
         <img src="png/map.png" width="1199" height="594" alt="Карта окрестностей Седоны">
       </section>
     </main>
@@ -117,23 +116,46 @@
       </section>
 
       <section>
-        <h2>Мы в социальных сетях</h2> <!-- Лектор говорил про доступность и заголовки, которые потом можно будет спрятать-->
+        <h2 class="visually-hidden">Мы в социальных сетях</h2> <!-- Указал класс "visually-hidden"-->
         <ul>
-          <li><a href="https://twitter.com/"> Twitter </a></li>
-          <li><a href="https://ru-ru.facebook.com/"> Facebook </a></li>
-          <li><a href="https://www.youtube.com/"> Youtube </a></li>
+          <li><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
+          <li><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
+          <li><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
         </ul>
       </section>
 
       <section>
         <p>website by
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="XXX.svg" width="100" height="100" alt="Логотип htmlacademy"></a></p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="svg/logo-htmlacademy.svg" width="100" height="100" alt="Логотип htmlacademy"></a></p>
       </section>
     </footer>
 
     <section>
-      <!-- Здесь будет форма поиска гостиницы -->
-      <h2> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <!-- Форма поиска гостиницы -->
+    <form class="" action="index.html" method="post">
+
+      <fieldset>
+        <legend> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
+          <label for="date_in">Дата заезда:</label>
+          <input type="text" name="date_in" id="date_in" value="24 апреля 2017"> <br>
+          <label for="date_out">Дата выезда:</label>
+          <input type="text" name="date_out" id="date_out" value="4 июля 2017"> <br>
+
+          <label for="adults">Взрослые</label>
+          <!-- В макете изменение количества жильцов реализовано через +/-. Пока не знаю как правильно, решил на время сделать кнопки -->
+          <button type="button" name="minus-adults" id="minus-adults">-</button>
+          <input type ="number" name="adults" id="adults" value="4 июля 2017"> <br>
+          <button type="button" name="plus-adults" id="plus-adults">+</button>
+
+          <label for="kids-number">Дети</label>
+          <button type="button" name="minus-kids" id="minus-kids">-</button>
+          <input type="number" name="kids-number" id="kids-number" value="4 июля 2017"> <br>
+          <button type="button" name="plus-kids" id="plus-kids">+</button>
+
+        <button type="submit" name="submit">Отправить</button><br>
+      </fieldset>
+    </form>
+
     </section>
 
   </body>
