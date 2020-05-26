@@ -29,31 +29,29 @@
 
         <fieldset>
           <legend>инфраструктура:</legend>
-          <label for="Basin"> <input type="checkbox" name="Basin" id="Basin" checked>Бассейн</label>
-          <label for="Parking"> <input type="checkbox" name="Parking" id="Parking">Парковка</label>
-          <label for="WIFI"> <input type="checkbox" name="WIFI" id="WIFI">WI-FI</label>
+          <label for="basin"> <input type="checkbox" name="basin" id="basin" checked>Бассейн</label>
+          <label for="parking"> <input type="checkbox" name="parking" id="parking">Парковка</label>
+          <label for="wi-fi"> <input type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
         </fieldset>
 
         <fieldset>
           <legend>тип жилья:</legend>
-          <label for="Hotel"> <input type="checkbox" name="Hotel" id="Hotel" checked>Гостиница</label>
-          <label for="Motel"> <input type="checkbox" name="Mootel" id="Motel" checked>Мотель</label>
-          <label for="Apartments"> <input type="checkbox" name="Apartments" id="Apartments" checked>Апартаменты</label>
+          <label for="hotel"> <input type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
+          <label for="motel"> <input type="checkbox" name="motel" id="motel" checked>Мотель</label>
+          <label for="apartments"> <input type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
         </fieldset>
 
         <fieldset>
           <legend>стоимость в сутки (р):</legend>
           <!-- Пока сделал через <input type="text" как сделать вывод цифры Min и Max я не совсем понимаю. -->
-          <input type="text" name="from" value="от 0" min="0">
-          <input type="text" name="to" value="до 3000">
+          <span>от<input type="text" name="cost-from" id="cost-from" value="0" min="0"></span>
+          <span>до<input type="text" name="cost-to" id="cost-to" value="3000" min="0"> </span>
           <!-- Попробовал ещё сделать через два ползунка и <output>, но output почему-то не отображается как отдельное поле в принципе :( -->
-          <output name="output-from" value="от 0"></output>
-          <output name="output-to" value="от 0" ></output>
           <br>
-          <input type="range" name="input-from" id="input-from" min="0" max="5000" step="500">
-          <input type="range" name="input-to" id="input-to" min="0" max="5000" step="500"><br>
+          <button type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
+          <button type="button"> <img src="svg/filter-button.svg" alt="Уменьшить цену"> </button><br>
 
-          <button type="button" name="show">Показать</button>
+          <button type="button">Показать</button>
 
          </fieldset>
         </form>
@@ -65,8 +63,8 @@
             <li><button type="button" name="sort-type">По типу</button></li>
             <li><button type="button" name="sort-rating">По рейтингу</button></li>
           </ul>
-          <button type="button" name="Up"> <img src="svg/icon-down-dir.svg" alt="Сверху вниз"> </button>
-          <button type="button" name="Down"> <img src="svg/icon-up-dir.svg" alt="Снизу вверх"> </button>
+          <a href="#"> <img src="svg/icon-down-dir.svg" alt="Сверху вниз"> </a>
+          <a href="#"> <img src="svg/icon-up-dir.svg" alt="Снизу вверх"> </a>
       </section>
 
       <section>
