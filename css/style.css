@@ -1,0 +1,336 @@
+:root {
+  --basic-white: #FFFFFF;
+  --darkest-blue: #5496BD;
+  --darker-blue: #669EC0;
+  --basic-blue: #81B3D2;
+  --dark-grey: #A9A9A9;
+  --basic-grey: #EEEEEE;
+  --bright-grey: #EBEBEB;
+  --brighter-grey: #F2F2F2;
+  --brightest-grey: #CACACA;
+  --special-grey: #666666;
+  --darkest-chocolate: #503E33;
+  --darker-chocolate: #604E43;
+  --basic-chocolate: #766357;
+  --basic-black: #333333;
+  --absolute-black: #000000;
+  }
+
+  body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    font-size: 0px;
+  }
+
+/* Main navigation */
+  .main-navigation {
+        background-color: var(--basic-white);
+  }
+
+  .navigation-list {
+    list-style: none;
+    }
+
+  .navigation-list a {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--basic-black);
+  }
+
+  .navigation-list a:hover {
+    color: var(--basic-blue);
+  }
+
+  .navigation-list a:active {
+    color: var(--brightest-grey);
+  }
+
+/* ссылки сортировки на inner */
+  .sort-list {
+    list-style: none;
+    }
+
+  .sort-list a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--brightest-grey);
+    text-decoration: underline;
+  }
+
+  .sort-list a:hover {
+    color: var(--basic-blue);
+  }
+
+  .sort-list a:active {
+    color: var(--basic-black);
+  }
+
+/* welcome section */
+  .welcome {
+    background-image: url("../img/background-sedona.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--brighter-grey);
+    text-align: center;
+  }
+/* reasons section */
+  .slogan {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .minor-slogan-white {
+    color: var(--basic-white);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .minor-slogan-black {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .reasons-blue {
+    color: var(--basic-white);
+    background-color: var(--basic-blue);
+    list-style: none;
+  }
+
+  .reasons-grey {
+    color: var(--basic-black);
+    background-color: var(--basic-grey);
+    list-style: none;
+  }
+
+  .advantages-list {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    list-style: none;
+  }
+
+  .interested {
+    font-size: 30px;
+  }
+
+/* footer */
+
+  .media-list {
+    list-style: none;
+    background-color: var(--basic-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 46px;
+    /* ниже - попытка выравнять иконки по центру, но не очень удачная */
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .media-list:hover {
+    background-color: var(--darker-blue);
+}
+  .media-list:active {
+    background-color: var(--darkest-blue);
+}
+
+/* find hotel */
+
+  .find-global {
+    max-width: 568px;
+    height: 395px;
+    border: 0px;
+  }
+
+  .find-field {
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .input {
+    background-color: var(--brighter-grey);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 38px;
+    width: 346px;
+    border: none;
+  }
+
+  .input:hover {
+    background-color: var(--bright-grey);
+  }
+
+  .input:focus {
+    background-color: var(--basic-white);
+    border: 2px solid #E5E5E5;
+
+  }
+
+  .input-small {
+    background-color: var(--brighter-grey);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 38px;
+    width: 39px;
+    border: none;
+  }
+
+  .input-small:hover {
+    background-color: var(--bright-grey);
+  }
+
+  .input-small:focus {
+    background-color: var(--basic-white);
+    border: 2px solid #E5E5E5;
+  }
+
+  .rating {
+    text-align: center;
+    color: var(--special-grey);
+    width: 110px;
+    height: 27px;
+    background-color: var(--brighter-grey);
+  }
+
+  /* Buttons */
+
+  .find-legend {
+    background-color: var(--basic-chocolate);
+    width: 568px;
+    height: 86px;
+    color: var(--basic-white);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-top: 30px;
+    }
+
+  .find-legend:hover {
+      background-color: var(--darker-chocolate);
+      color: inherit;
+    }
+  .find-legend:active {
+      background-color: var(--darkest-chocolate);
+      color: inherit;
+      }
+
+  .input-small-button {
+    color: var(--dark-grey);
+  }
+
+  .input-small-button:hover {
+    color: var(--absolute-black);
+  }
+
+  .input-small-button:active {
+    color: var(--basic-blue);
+  }
+
+  .find-buton {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+    height: 58px;
+    width: 458px;
+    border: none;
+  }
+
+  .find-buton:hover {
+    background-color: var(--darker-blue);
+  }
+
+  .find-buton:active {
+    background-color: var(--darkest-blue);
+  }
+
+/* кнопки для inner */
+
+  .details {
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+    height: 27px;
+    width: 110px;
+    border: none;
+  }
+
+  .details:hover {
+    background-color: var(--darker-blue);
+  }
+
+  .details:active {
+    background-color: var(--darkest-blue);
+  }
+
+  .book {
+    background-color: var(--basic-chocolate);
+    color: var(--basic-white);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    vertical-align: middle;
+    text-transform: uppercase;
+    text-align: center;
+    height: 27px;
+    width: 142px;
+    border: none;
+  }
+
+  .book:hover {
+    background-color: var(--darker-chocolate);
+  }
+
+  .book:active {
+    background-color: var(--darkest-chocolate);
+  }

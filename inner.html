@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
         </ul>
           <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA">
-        <ul>
+        <ul class="navigation-list">
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
         </ul>
@@ -26,7 +29,7 @@
       <section>
         <!--Здесь будет фильтр с гостиницами -->
       <form action="index.html" method="post">
-
+        <!--Стили пока не подключил -->
         <fieldset>
           <legend>инфраструктура:</legend>
           <label for="basin"> <input type="checkbox" name="basin" id="basin" checked>Бассейн</label>
@@ -56,43 +59,44 @@
          </fieldset>
         </form>
 
-        <span>Найдено:</span> <span>3</span><br>
+        <span class="slogan">Найдено:</span> <span class="slogan">3</span><br>
         <h3 class="visually-hidden">Сортировка:</h3>
-          <ul>
-            <li><button type="button" name="sort-price">По цене</button></li>
-            <li><button type="button" name="sort-type">По типу</button></li>
-            <li><button type="button" name="sort-rating">По рейтингу</button></li>
+          <ul class="sort-list">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По рейтингу</a></li>
           </ul>
-          <a href="#"> <img src="svg/icon-down-dir.svg" alt="Сверху вниз"> </a>
-          <a href="#"> <img src="svg/icon-up-dir.svg" alt="Снизу вверх"> </a>
+          <!-- Я не совсем понял, как подключить :hover и :active к ссылкам ниже -->
+          <a class="sort-link-down" href="#"> <img src="svg/icon-down-dir.svg" alt="Сверху вниз"> </a>
+          <a class="sort-link-up" href="#"> <img src="svg/icon-up-dir.svg" alt="Снизу вверх"> </a>
       </section>
 
       <section>
         <h1 class="visually-hidden">Каталог гостиниц</h1>
-          <ul>
+          <ul class="sort-list">
             <li>
               <img src="img/amara.jpg" alt="Amara Resort & Spa" width="135" height="90">
-              <h2>Amara Resort & Spa</h2>
+              <h2 class="slogan">Amara Resort & Spa</h2>
               <p> <span>Гостиница</span> <span> От 4000 Р.</span></p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-              <p>Рейтинг: 8,5</p>
+              <button class="details" type="button">Подробнее</button>
+              <button class="book" type="button">Забронировать</button>
+              <p class="rating">Рейтинг: 8,5</p>
             </li>
             <li>
               <img src="img/desert-q-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
-              <h2>Desert Quail Inn</h2>
+              <h2 class="slogan">Desert Quail Inn</h2>
               <p><span>Мотель</span> <span> От 3000 Р.</span></p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-              <p>Рейтинг: 8,9</p>
+              <button class="details" type="button">Подробнее</button>
+              <button class="book" type="button">Забронировать</button>
+              <p class="rating">Рейтинг: 8,9</p>
             </li>
             <li>
               <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-              <h2>Villas at Poco Diablo</h2>
+              <h2 class="slogan">Villas at Poco Diablo</h2>
               <p><span>Апартаменты</span> <span> От 2000 Р.</span></p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
-              <p>Рейтинг: 9,2</p>
+              <button class="details" type="button">Подробнее</button>
+              <button class="book" type="button">Забронировать</button>
+              <p class="rating">Рейтинг: 9,2</p>
             </li>
           </ul>
       </section>
@@ -100,16 +104,16 @@
 
     <footer>
       <section>
-        <h2>#visitSEDONA</h2>
-        <p>ТЕЛ: +7(495) 666-01-66</p>
+        <h2 class="slogan">#visitSEDONA</h2>
+        <p class="slogan">ТЕЛ: +7(495) 666-01-66</p>
       </section>
 
       <section>
-        <h2>Мы в социальных сетях</h2> <!-- Лектор говорил про доступность и заголовки, которые потом можно будет спрятать-->
-        <ul>
-          <li><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
-          <li><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
-          <li><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
+        <h2 class="visually-hidden">Мы в социальных сетях</h2> <!-- Указал класс "visually-hidden"-->
+        <ul >
+          <li class="media-list"><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
+          <li class="media-list"><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
+          <li class="media-list"><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
         </ul>
       </section>
 

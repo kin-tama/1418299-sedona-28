@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul>
+      <nav class="main-navigation">
+        <ul class="navigation-list">
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
         </ul>
           <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA">
-        <ul>
+        <ul class="navigation-list">
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
         </ul>
@@ -21,13 +24,13 @@
     </header>
 
     <main>
-      <section>
-        <h1 class="visually-hidden"> Приветствие </h1><!-- Указал класс "visually-hidden"-->
+      <section class="welcome">
+        <span class="visually-hidden"><h1> Приветствие </h1> </span><!-- Указал класс "visually-hidden"-->
         <img src="png/welcome.png" alt="Welcome to the gorgeous SEDONA because grand canyon sucks" width="456.65" height="350.88">
       </section>
 
       <section>
-        <p> Седона — небольшой городок в Аризоне, <br>
+        <p class="slogan"> Седона — небольшой городок в Аризоне, <br>
            заслуживающий большего! </p>
         <p> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </p>
       </section>
@@ -36,61 +39,61 @@
 
         <h1 class="visually-hidden">Пять причин:</h1> <!-- Указал класс "visually-hidden"-->
         <ol>
-          <li>
-            <p><span>настоящий <br>городок</span> <br>
+          <li class="reasons-blue">
+            <p><span class="minor-slogan-white">настоящий <br>городок</span> <br>
              <span> - №1 - <br>
                 Седона - не аттракцион для туристов, там <br>
                 течёт своя жизнь</span> </p>
             <img src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
           </li>
         </ol>
-          <h1>Список рекомендаций</h1>
-            <ul>
+          <h1 class="visually-hidden">Список рекомендаций</h1>
+            <ul class="advantages-list">
               <li>
                 <span><img src="svg/icon-1.svg" alt="Иконка дом"></span>
-                <h3>Жильё</h3>
+                <h3 class="minor-slogan-black">Жильё</h3>
                 <p>Рекомендуем пожить в настоящем <br>
                     мотеле, как в кино </p>
               </li>
               <li>
                 <span><img src="svg/icon-3.svg" alt="Иконка бургер"></span>
-                <h3>Еда</h3>
+                <h3 class="minor-slogan-black">Еда</h3>
                 <p>Всегда заказывайте фирменный бургер,<br>
                     вы не разочаруетесь! </p>
               </li>
               <li>
                 <span><img src="svg/icon-2.svg" alt="Иконка сувенир"></span>
-                <h3>Сувениры</h3>
+                <h3 class="minor-slogan-black">Сувениры</h3>
                 <p>Не только китайского, но и местного <br>
                   производства!</p>
               </li>
             </ul>
 
-        <ol start="2">
-          <li>
+        <ol class="reasons-grey" start="2">
+          <li class="reasons-blue">
             <img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            <p><span> там есть <br> мост дьявола <br> </span>
+            <p><span class="minor-slogan-white"> там есть <br> мост дьявола <br> </span>
              <span> - №2 - <br>
                 Да, по нему можно пройти! Если конечно <br>
                 вы осмелитесь </span></p>
           </li>
 
-          <li>
-            <p><span>небольшая <br> площадь<br></span>
+          <li >
+            <p><span class="minor-slogan-black">небольшая <br> площадь<br></span>
              <span> - №3 - <br>
                 все достопримечательности <br>
                 находятся очень близко </span></p>
           </li>
 
-          <li>
-            <p><span>красивая <br> дорога<br></span>
+          <li >
+            <p><span class="minor-slogan-black">красивая <br> дорога<br></span>
                 <span> - №4 - <br>
               ехать в седону из лас-вегаса совсем<br>
               не скучно! </span></p>
           </li>
 
-          <li>
-            <p><span>мало <br>туристов <br></span>
+          <li >
+            <p><span class="minor-slogan-black">мало <br>туристов <br></span>
              <span>- №5 - <br>
               большинство едет в гранд каньон <br>
               и толпится там </span></p>
@@ -99,7 +102,7 @@
       </section>
 
       <section>
-        <h2>Заинтересовались?</h2>
+        <h2 class="interested">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </section>
@@ -111,16 +114,16 @@
 
     <footer>
       <section>
-        <h2>#visitSEDONA</h2>
-        <p>ТЕЛ: +7(495) 666-01-66</p>
+        <h2 class="slogan">#visitSEDONA</h2>
+        <p class="slogan">ТЕЛ: +7(495) 666-01-66</p>
       </section>
 
       <section>
         <h2 class="visually-hidden">Мы в социальных сетях</h2> <!-- Указал класс "visually-hidden"-->
-        <ul>
-          <li><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
-          <li><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
-          <li><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
+        <ul >
+          <li class="media-list"><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
+          <li class="media-list"><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
+          <li class="media-list"><a href="https://www.youtube.com/"> <img src="svg/youtube.svg" alt="youtube"> </a></li>
         </ul>
       </section>
 
@@ -134,26 +137,28 @@
       <!-- Форма поиска гостиницы -->
     <form class="" action="index.html" method="post">
 
-      <fieldset>
-        <legend> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend>
-          <label for="date_in">Дата заезда:</label>
-          <input type="text" name="date_in" id="date_in" value="24 апреля 2017"> <br>
-          <label for="date_out">Дата выезда:</label>
-          <input type="text" name="date_out" id="date_out" value="4 июля 2017"> <br>
+      <fieldset class="find-global">
+        <legend class="find-legend"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</legend> <!-- Я не понял, должна ли это быть ссылка/кнопка. Пока оставил как легенду-->
+          <div class="find-field">
+            <label for="date_in">Дата заезда:</label>
+            <input class="input" type="text" name="date_in" id="date_in" value="24 апреля 2017"> <br>
+            <label for="date_out">Дата выезда:</label>
+            <input class="input" type="text" name="date_out" id="date_out" value="4 июля 2017"> <br>
 
-          <label for="adults">Взрослые</label>
-          <!-- В макете изменение количества жильцов реализовано через +/-. Пока не знаю как правильно, решил на время сделать кнопки -->
-          <button type="button" name="minus-adults" id="minus-adults">-</button>
-          <input type ="number" name="adults" id="adults" value="4 июля 2017"> <br>
-          <button type="button" name="plus-adults" id="plus-adults">+</button>
+            <label for="adults">Взрослые</label>
+            <!-- В макете изменение количества жильцов реализовано через +/-. Пока не знаю как правильно, решил на время сделать кнопки -->
+            <button class="input-small input-small-button" type="button" name="minus-adults" id="minus-adults">-</button>
+            <input class="input-small" type ="number" name="adults" id="adults" value="4 июля 2017"> <br>
+            <button class="input-small input-small-button"  type="button" name="plus-adults" id="plus-adults">+</button>
 
-          <label for="kids-number">Дети</label>
-          <button type="button" name="minus-kids" id="minus-kids">-</button>
-          <input type="number" name="kids-number" id="kids-number" value="4 июля 2017"> <br>
-          <button type="button" name="plus-kids" id="plus-kids">+</button>
+            <label for="kids-number">Дети</label>
+            <button class="input-small input-small-button" type="button" name="minus-kids" id="minus-kids">-</button>
+            <input class="input-small" type="number" name="kids-number" id="kids-number" value="4 июля 2017"> <br>
+            <button class="input-small input-small-button" type="button" name="plus-kids" id="plus-kids">+</button>
 
-        <button type="submit" name="submit">Отправить</button><br>
-      </fieldset>
+          <button class="find-buton" type="submit" name="submit">найти</button><br>
+        </div>
+        </fieldset>
     </form>
 
     </section>
