@@ -95,6 +95,28 @@
     color: var(--basic-black);
   }
 
+  .svg-link :hover {
+    fill: var(--basic-black);
+  }
+
+  .svg-link :active {
+    fill: var(--basic-blue);
+  }
+
+/* временный класс для лого академии */
+  .svg-logo {
+    height: 40px;
+  }
+
+  .svg-logo :hover {
+    fill: var(--basic-black);
+  }
+
+  .svg-logo :active {
+    fill: var(--basic-blue);
+  }
+
+
 /* welcome section */
   .welcome {
     background-image: url("../img/background-sedona.jpg");
@@ -169,6 +191,12 @@
 }
 
 /* find hotel */
+  .find-hotel-form {
+    width: 568px;
+    margin-left: 315px;
+    margin-right: 315px;
+  }
+
 
   .find-global {
     max-width: 568px;
@@ -182,6 +210,7 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
+    text-align: center;
   }
 
   .input {
@@ -235,7 +264,7 @@
 
   /* Buttons */
 
-  .find-legend {
+  .find-hotel-button {
     background-color: var(--basic-chocolate);
     width: 568px;
     height: 86px;
@@ -244,15 +273,17 @@
     font-weight: 700;
     line-height: 26px;
     padding-top: 30px;
+    padding-bottom: 30px;
+    border: none;
     }
 
-  .find-legend:hover {
+  .find-hotel-button:hover {
       background-color: var(--darker-chocolate);
-      color: inherit;
+      color: var(--basic-white);
     }
-  .find-legend:active {
+  .find-hotel-button:active {
       background-color: var(--darkest-chocolate);
-      color: inherit;
+      color: var(--basic-white);
       }
 
   .input-small-button {
