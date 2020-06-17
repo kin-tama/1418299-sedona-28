@@ -1,3 +1,5 @@
+
+/* Variables */
 :root {
   --basic-white: #FFFFFF;
   --darkest-blue: #5496BD;
@@ -15,7 +17,7 @@
   --basic-black: #333333;
   --absolute-black: #000000;
   }
-
+/* Global */
   body {
     min-width: 1220px;
     margin: 0;
@@ -50,6 +52,80 @@
     font-size: 0px;
   }
 
+/* flex */
+
+  .page {
+    height: 100%;
+    max-width: 1200px;
+  }
+
+  .navigation-list {
+    display: flex;
+    box-sizing: border-box;
+    width: 1200px;
+    max-height: 56px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .advantages-list {
+    display: flex;
+    box-sizing: border-box;
+    height: 330px;
+    width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    padding-bottom: 82px;
+  }
+
+  .reasons-blue {
+    display: flex;
+    box-sizing: border-box;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hotels {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sort-hotels {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 1200px;
+    border-color: #E5E5E5;
+    border-width: medium;
+  }
+
+  .hotel-list {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 135px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 5px solid rgba(0, 255, 255, 0.7)
+  }
+
 /* Main navigation */
   .main-navigation {
         background-color: var(--basic-white);
@@ -74,10 +150,12 @@
     color: var(--brightest-grey);
   }
 
-/* ссылки сортировки на inner */
+/* ссылки сортировки и другие элементы inner*/
   .sort-list {
+    display: flex;
     list-style: none;
-    }
+    width: 150px;
+      }
 
   .sort-list a {
     font-size: 12px;
@@ -103,7 +181,24 @@
     fill: var(--basic-blue);
   }
 
-/* временный класс для лого академии */
+  .hotel-type {
+    display: inline-block;
+    box-sizing: border-box;
+    min-width: 107px;
+    min-height: 21px;
+    margin-right: 9px;
+  }
+
+  .hotel-image{
+    display: inline-block;
+    box-sizing: border-box;
+    outline: 5px solid rgba(0, 255, 255, 0.7);
+    height: 90px;
+    width: 130px;
+  }
+
+/* лого академии */
+
   .svg-logo {
     height: 40px;
   }
@@ -116,17 +211,48 @@
     fill: var(--basic-blue);
   }
 
+  .logo-link :hover .svg-logo {
+    fill: var(--basic-black);
+  }
+
+  .logo-link :active .svg-logo {
+    fill: var(--basic-blue);
+  }
 
 /* welcome section */
   .welcome {
+
     background-image: url("../img/background-sedona.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--brighter-grey);
-    text-align: center;
+    box-sizing: border-box;
+    width: 1200px;
+    padding-top: 77px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 509px;
   }
+
+  .welcome-img-2 {
+    margin-top: 17px;
+  }
+
 /* reasons section */
+  .slogan-section {
+    box-sizing: border-box;
+    height: 216px;
+    padding-top: 43px;
+  }
+
   .slogan {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  .hotel-name {
     color: var(--basic-black);
     font-size: 21px;
     font-weight: 700;
@@ -151,12 +277,22 @@
     color: var(--basic-white);
     background-color: var(--basic-blue);
     list-style: none;
+    max-height: 256px;
   }
 
   .reasons-grey {
     color: var(--basic-black);
     background-color: var(--basic-grey);
+    background-size: 100%;
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    width: 1200px;
+    height: 256px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .advantages-list {
@@ -165,43 +301,77 @@
     list-style: none;
   }
 
+  .true-town {
+    padding-top: 47px;
+    padding-bottom:54px;
+    padding-left: 52px;
+  }
+
+  .devils-blidge {
+    padding-top: 47px;
+    padding-bottom:54px;
+    padding-right: 52px;
+  }
+
   .interested {
     font-size: 30px;
   }
 
 /* footer */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 
   .media-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 6px;
+    width: 150px;
+    height: 48px;
+  }
+
+  .media-list li{
     list-style: none;
     background-color: var(--basic-blue);
     background-position: center;
     background-repeat: no-repeat;
-    width: 48px;
-    height: 46px;
-    /* ниже - попытка выравнять иконки по центру, но не очень удачная */
-    text-align: center;
-    vertical-align: middle;
   }
 
-  .media-list:hover {
+  .media-list li:hover {
     background-color: var(--darker-blue);
-}
-  .media-list:active {
+  }
+  .media-list li:active {
     background-color: var(--darkest-blue);
-}
+  }
 
-/* find hotel */
+  .media-list img{
+    margin-top: 13px;
+  }
+
+  .html-academy-logo {
+    display: flex;
+    justify-content: аflex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 197px;
+  }
+
+/* find hotel форма поиска отелей */
   .find-hotel-form {
     width: 568px;
     margin-left: 315px;
     margin-right: 315px;
   }
 
-
   .find-global {
     max-width: 568px;
     height: 395px;
-    border: 0px;
+    border: none;
   }
 
   .find-field {
@@ -231,7 +401,6 @@
   .input:focus {
     background-color: var(--basic-white);
     border: 2px solid #E5E5E5;
-
   }
 
   .input-small {
