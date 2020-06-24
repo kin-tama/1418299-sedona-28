@@ -56,16 +56,20 @@
 
          </fieldset>
         </form>
-
-        <span class="slogan">Найдено:</span> <span class="slogan">3</span><br>
-        <h3>Сортировка:</h3>
-          <ul class="sort-list">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <a href="#"> <svg class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 10L0 0h11"/></svg> </a>
-          <a href="#"> <svg  class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 0L0 10h11z"/></svg> </a>
+        <div class="inner-sort">
+          <span class="slogan">Найдено: 3</span><br>
+          <h3>Сортировка:</h3>
+            <ul class="sort-list">
+              <!-- Почему-то если делать такие вещи списком, слева по умолчанию появляется какой-то странный отсутп. На index у меня тоже была такая проблема. Как с этим бороться? -->
+              <li><a href="#">По цене</a></li>
+              <li><a href="#">По типу</a></li>
+              <li><a href="#">По рейтингу</a></li>
+            </ul>
+          <div>
+            <a href="#"> <svg class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 10L0 0h11"/></svg> </a>
+            <a href="#"> <svg  class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 0L0 10h11z"/></svg> </a>
+          </div>
+          </div>
       </section>
 
           <h1 class="visually-hidden">Каталог гостиниц</h1>
@@ -75,37 +79,63 @@
                 <img src="img/amara.jpg" alt="Amara Resort & Spa" width="135" height="90">
               </div>
               <div class="hotel-list">
-                <h2 class="hotel-name">Amara Resort & Spa</h2>
-                <p> <span class="hotel-type">Гостиница</span> <span class="hotel-type"> От 4000 Р.</span></p>
+                <h2 class="visually-hidden">Amara Resort & Spa </h2>
+                <!-- здесь снова проблема со странными отступами. если я делаю "Amara Resort & Spa" заголовком, появлябется странный отступ сверху, который вообще ничем не убирается. Что делать? И надо ли её делать заголовком? -->
+                <div class="hotel-name">Amara Resort & Spa</div>
+                <p> <span class="hotel-type">Гостиница</span> <span class="hotel-type"> От 4000 Р.</span> </p>
                 <button class="details" type="button">Подробнее</button>
                 <button class="book" type="button">Забронировать</button>
               </div>
-              <p class="rating">Рейтинг: 8,5</p>
-
+              <div class="rating-box">
+                <span class="star">
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
+                <p class="rating">Рейтинг: 8,5</p>
+              <div class="rating-box">
             </li>
-            <li class="sort-hotels">
+
+            <li class="sort-hotels-noborder">
               <div class="hotel-image">
                 <img src="img/desert-q-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
               </div>
               <div class="hotel-list">
-                <h2 class="hotel-name">Desert Quail Inn</h2>
+                <h2 class="visually-hidden">Desert Quail Inn</h2>
+                <!-- см комментарий выше -->
+                <div class="hotel-name">Desert Quail Inn</div>
                 <p><span class="hotel-type">Мотель</span> <span  class="hotel-type"> От 3000 Р.</span></p>
                 <button class="details" type="button">Подробнее</button>
                 <button class="book" type="button">Забронировать</button>
               </div>
+              <div class="rating-box">
+                <span class="star">
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
                 <p class="rating">Рейтинг: 8,9</p>
+              </div>
             </li>
             <li class="sort-hotels">
               <div class="hotel-image">
                 <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
               </div>
               <div class="hotel-list">
-                <h2 class="hotel-name">Villas at Poco Diablo</h2>
+                <h2 class="visually-hidden">Villas at Poco Diablo</h2>
+                <div class="hotel-name">Villas at Poco Diablo</div>
                 <p><span class="hotel-type">Апартаменты</span> <span class="hotel-type"> От 2000 Р.</span></p>
                 <button class="details" type="button">Подробнее</button>
                 <button class="book" type="button">Забронировать</button>
               </div>
+              <div class="rating-box">
+                <span class="star">
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                  <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+                </span>
                 <p class="rating">Рейтинг: 9,2</p>
+              </div>
             </li>
           </ul>
 
