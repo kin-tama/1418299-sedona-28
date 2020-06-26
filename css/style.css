@@ -20,7 +20,6 @@
   }
 /* Global */
   body {
-    min-width: 1220px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Arial, sans-serif;
@@ -30,10 +29,23 @@
     color: var(--basic-black);
     text-transform: uppercase;
     text-align: center;
-    background-color: var(--basic-white);
+
     background-position: top center;
     background-repeat: no-repeat;
   }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+
+    width: 1280px;
+    background-color: var(--brighter-grey);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
 
   a {
     text-decoration: none;
@@ -68,6 +80,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--basic-white);
   }
 
   .main {
@@ -83,10 +96,12 @@
     box-sizing: border-box;
     width: 1200px;
     max-height: 56px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 73px;
+    padding-right: 73px;
   }
 
   .advantages-list {
@@ -109,14 +124,27 @@
     height: 256px;
     color: var(--basic-white);
     background-color: var(--basic-blue);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .hotels {
     display: flex;
     flex-direction: column;
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
+    }
+
+  .hotels li.sort-hotels{
+    border-top-color:#E5E5E5;
+    border-top-width: thin;
+    border-top-style: solid;
+    border-bottom-color:#E5E5E5;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+
   }
 
   .inner-sort {
@@ -124,13 +152,21 @@
     align-items: center;
     width: auto;
     height: 86px;
-    padding-left: 73px;
+    margin-left: 73px;
   }
 
   .inner-sort h3 {
     margin-left: 43px;
     margin-right: 40px;
   }
+
+  .inner-sort .slogan {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 0;
+    }
 
   .sort-hotels {
     display: flex;
@@ -139,12 +175,7 @@
     justify-content: flex-start;
     height: 150px;
     width: auto;
-    border-top-color:#E5E5E5;
-    border-top-width: thin;
-    border-top-style: solid;
-    border-bottom-color:#E5E5E5;
-    border-bottom-width: thin;
-    border-bottom-style: solid;
+    padding-left: 73px;
   }
 
   .sort-hotels-noborder {
@@ -154,6 +185,7 @@
     justify-content: flex-start;
     height: 150px;
     width: auto;
+    padding-left: 73px;
   }
 
   .hotel-list {
@@ -165,6 +197,7 @@
     height: 100px;
     align-items: flex-start;
     margin-left: 30px;
+
   }
 
 /* Main navigation */
@@ -219,7 +252,8 @@
     display: flex;
     justify-content: space-between;
     width: 34px;
-    margin-left: 500px;
+    margin-left: 430px;
+    margin-right: 73px;
   }
 
   .svg-link :hover {
@@ -264,17 +298,21 @@
     fill: var(--basic-blue);
   }
 
-  .logo-link :hover .svg-logo {
+  .logo-link {
+    width: 114px;
+  }
+
+
+  logo-link:hover .svg-logo {
     fill: var(--basic-black);
   }
 
-  .logo-link :active .svg-logo {
+  logo-link:active .svg-logo {
     fill: var(--basic-blue);
   }
 
 /* welcome section */
   .welcome {
-
     background-image: url("../img/background-sedona.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -304,6 +342,8 @@
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin: 0;
+    margin-bottom: 0;
   }
 
   .general-list {
@@ -313,11 +353,17 @@
     justify-content: center;
   }
 
+  .general-list ol {
+    padding: 0;
+  }
+
+
   .hotel-name {
     color: var(--basic-black);
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
+    margin: 0;
   }
 
   .minor-slogan-white {
@@ -347,6 +393,10 @@
     height: 256px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .advantages-list {
@@ -416,11 +466,14 @@
 
   .html-academy-logo {
     display: flex;
-    justify-content: аflex-end;
+    justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    width: 197px;
-  }
+    }
+  .html-academy-logo span {
+    width: 74px;
+    margin-right: 8px;
+    }
 
 /* find hotel форма поиска отелей */
   .find-hotel-form {
@@ -490,6 +543,7 @@
     justify-content: space-between;
     align-content: space-between;
     margin-left: auto;
+    margin-right: 73px;
     height: 93px;
     }
 
