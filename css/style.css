@@ -197,7 +197,98 @@
     height: 100px;
     align-items: flex-start;
     margin-left: 30px;
+  }
 
+/* inner-filter */
+
+  .inner-filter {
+    color: white;
+    display: flex;
+    background-image: url("../img/background.jpg");
+  }
+
+  .filter fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 136px;
+    border: none;
+    margin-left: 72px;
+    margin-top: 27px;
+  }
+
+  .filter fieldset legend{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .filter fieldset ul {
+    display: flex;
+    flex-direction: column;
+    height: 114px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .cost-filter  {
+    display: flex;
+    height: 136px;
+    width: 317px;
+    margin-top: 27px;
+    margin-left: 363px;
+  }
+
+  .cost-filter fieldset {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
+
+  .cost-filter fieldset input {
+    color: white;
+    box-sizing: border-box;
+    width: 158px;
+    height: 36px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    background: none;
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 2px;
+  }
+
+  .cost-filter fieldset legend {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .price-button {
+    background: none;
+    border: none;
+  }
+
+  .show-button {
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    height: 36px;
+    width: 137px;
+    margin-left: 90px;
+    border: 2px solid white;
+    border-radius: 2px;
+  }
+
+  .filter-element {
+    display: flex;
+    width: 317px;
+    justify-content: space-between;
   }
 
 /* Main navigation */
@@ -432,6 +523,7 @@
   .footer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -476,24 +568,59 @@
     }
 
 /* find hotel форма поиска отелей */
+
   .find-hotel-form {
+    display: flex;
+    flex-direction: column;
     width: 568px;
-    margin-left: 315px;
-    margin-right: 315px;
+    max-height: 481px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 0;
   }
 
   .find-global {
-    max-width: 568px;
+    display: flex;
+    flex-direction: column;
+    width: 568px;
     height: 395px;
     border: none;
+    padding-top: 55px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .date-people {
+    display:flex;
+    align-items: baseline;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 458px;
+  }
+
+  .date-people label {
+    margin-left: 0px;
+    margin-right: 10px;
+    text-align: left;
+    width: 121px;
+    font-weight: bold;
+  }
+
+  .date-people label:last-child { /* пытаюсь поменять размер лейбла "дети", но почему-то ничего не работает,
+    хотя я вроде все правильно сделал? */
+    width: 68px;
+    margin-right: 20px;
+    text-align: center;
   }
 
   .find-field {
-    background-color: var(--basic-white);
-    color: var(--basic-black);
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
+    margin: auto;
+    width: 458;
+  }
+
+  .label:last-child {
     text-align: center;
   }
 
@@ -506,6 +633,7 @@
     height: 38px;
     width: 346px;
     border: none;
+    padding-left: 14px;
   }
 
   .input:hover {
@@ -534,7 +662,6 @@
 
   .input-small:focus {
     background-color: var(--basic-white);
-    border: 2px solid #E5E5E5;
   }
 
   .rating-box {
@@ -547,7 +674,7 @@
     height: 93px;
     }
 
-    .star {
+  .star {
       display: flex;
       justify-content: flex-end;
     }
@@ -563,7 +690,6 @@
   }
 
   /* Buttons */
-
   .find-hotel-button {
     background-color: var(--basic-chocolate);
     width: 568px;
@@ -610,6 +736,7 @@
     height: 58px;
     width: 458px;
     border: none;
+    margin-top: 24px;
   }
 
   .find-buton:hover {

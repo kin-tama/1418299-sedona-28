@@ -144,24 +144,28 @@
         <button type="button" class="find-hotel-button"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button> <!-- Я не понял, должна ли это быть ссылка/кнопка. Пока оставил как легенду-->
         <fieldset class="find-global">
             <div class="find-field">
-              <label for="date_in">Дата заезда:</label>
-              <input class="input" type="text" name="date_in" id="date_in" value="24 апреля 2017"> <br>
-              <label for="date_out">Дата выезда:</label>
-              <input class="input" type="text" name="date_out" id="date_out" value="4 июля 2017"> <br>
+              <div class="date-people">
+                <label for="date_in" >Дата заезда:</label> <!-- это точно нужно делать через label? -->
+                <input class="input" type="text" name="date_in" id="date_in" value="24 апреля 2017">
+              </div>
+              <div class="date-people">
+                <label for="date_out">Дата выезда:</label>
+                <input class="input" type="text" name="date_out" id="date_out" value="4 июля 2017">
+              </div>
+              <div class="date-people">
+                <label for="adults">Взрослые:</label>
+                <button class="input-small input-small-button" type="button" name="minus-adults" id="minus-adults">-</button>
+                <!-- В макете изменение количества жильцов реализовано через +/-. Пока не знаю как правильно, решил на время сделать кнопки -->
+                <input class="input-small" type ="number" name="adults" id="adults">
+                <button class="input-small input-small-button"  type="button" name="plus-adults" id="plus-adults">+</button>
 
-              <label for="adults">Взрослые</label>
-              <!-- В макете изменение количества жильцов реализовано через +/-. Пока не знаю как правильно, решил на время сделать кнопки -->
-              <button class="input-small input-small-button" type="button" name="minus-adults" id="minus-adults">-</button>
-              <input class="input-small" type ="number" name="adults" id="adults" value="4 июля 2017"> <br>
-              <button class="input-small input-small-button"  type="button" name="plus-adults" id="plus-adults">+</button>
-
-              <label for="kids-number">Дети</label>
-              <button class="input-small input-small-button" type="button" name="minus-kids" id="minus-kids">-</button>
-              <input class="input-small" type="number" name="kids-number" id="kids-number" value="4 июля 2017"> <br>
-              <button class="input-small input-small-button" type="button" name="plus-kids" id="plus-kids">+</button>
-
-            <button class="find-buton" type="submit" name="submit">найти</button><br>
-          </div>
+                <label class="kids-number" for="kids-number">Дети:</label>
+                <button class="input-small input-small-button" type="button" name="minus-kids" id="minus-kids">-</button>
+                <input class="input-small" type="number" name="kids-number" id="kids-number">
+                <button class="input-small input-small-button" type="button" name="plus-kids" id="plus-kids">+</button>
+              </div>
+              <button class="find-buton" type="submit" name="submit">найти</button><br>
+            </div>
           </fieldset>
       </form>
 

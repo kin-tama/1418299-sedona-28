@@ -27,35 +27,46 @@
 
           <section>
             <!--Здесь будет фильтр с гостиницами -->
-          <form action="index.html" method="post">
+          <form class="inner-filter" action="index.html" method="post">
             <!--Стили пока не подключил -->
-            <fieldset>
-              <legend>инфраструктура:</legend>
-              <label for="basin"> <input type="checkbox" name="basin" id="basin" checked>Бассейн</label>
-              <label for="parking"> <input type="checkbox" name="parking" id="parking">Парковка</label>
-              <label for="wi-fi"> <input type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
-            </fieldset>
+            <div class="filter">
+              <fieldset>
+                <legend>инфраструктура:</legend>
+                  <ul>
+                    <label for="basin"> <input type="checkbox" name="basin" id="basin" checked>Бассейн</label>
+                    <label for="parking"> <input type="checkbox" name="parking" id="parking">Парковка</label>
+                    <label for="wi-fi"> <input type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="filter">
+              <fieldset>
+                <legend>тип жилья:</legend>
+                  <ul>
+                    <label for="hotel"> <input type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
+                    <label for="motel"> <input type="checkbox" name="motel" id="motel" checked>Мотель</label>
+                    <label for="apartments"> <input type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
+                  </ul>
+              </fieldset>
+            </div>
+            <div class="cost-filter">
+              <fieldset>
+                <legend>стоимость в сутки (р):</legend>
+                <!-- Пока сделал через <input type="text" как сделать вывод цифры Min и Max я не совсем понимаю. -->
+                <div class="filter-element">
+                  <input type="text" name="cost-from" id="cost-from" value="от 0" min="0">
+                  <input type="text" name="cost-to" id="cost-to" value="до 3000" min="0">
+                </div>
+                <!-- Попробовал ещё сделать через два ползунка и <output>, но output почему-то не отображается как отдельное поле в принципе :( -->
 
-            <fieldset>
-              <legend>тип жилья:</legend>
-              <label for="hotel"> <input type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
-              <label for="motel"> <input type="checkbox" name="motel" id="motel" checked>Мотель</label>
-              <label for="apartments"> <input type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
-            </fieldset>
+                <div class="filter-element">
+                  <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
+                  <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Уменьшить цену"> </button>
+                </div>
 
-            <fieldset>
-              <legend>стоимость в сутки (р):</legend>
-              <!-- Пока сделал через <input type="text" как сделать вывод цифры Min и Max я не совсем понимаю. -->
-              <span>от<input type="text" name="cost-from" id="cost-from" value="0" min="0"></span>
-              <span>до<input type="text" name="cost-to" id="cost-to" value="3000" min="0"> </span>
-              <!-- Попробовал ещё сделать через два ползунка и <output>, но output почему-то не отображается как отдельное поле в принципе :( -->
-              <br>
-              <button type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
-              <button type="button"> <img src="svg/filter-button.svg" alt="Уменьшить цену"> </button><br>
-
-              <button type="button">Показать</button>
-
-             </fieldset>
+              <button class="show-button" type="button">Показать</button>
+            </div>
+               </fieldset>
             </form>
             <div class="inner-sort">
               <span class="slogan">Найдено: 3</span><br>
