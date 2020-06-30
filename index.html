@@ -16,13 +16,12 @@
           <ul class="navigation-list">
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="index.html"> <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA"></a> </li>
+            <li><a href="index.html"> <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA"></a></li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="inner.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
-
       <main class="main">
         <section  class="welcome">
           <span class="visually-hidden"><h1> Приветствие </h1> </span><!-- Указал класс "visually-hidden"-->
@@ -41,11 +40,9 @@
           <h1 class="visually-hidden">Пять причин:</h1>
           <ol>
             <li class="reasons-blue">
-              <!-- Здесь по логике напрашивается <ol>, т.к. тут идет перечисление с пронумерованными причинами.
-               но если исползовать <ol>, этот блок уезжает вправо и я не могу заставить его встать на место-->
-              <p class="true-town"><span class="minor-slogan-white">настоящий <br>городок</span> <br>
-               <span> - №1 - <br>
-                  Седона - не аттракцион для туристов, там <br>
+              <p class="true-town-devils-blidge"><span class="minor-slogan">настоящий <br>городок</span>
+                <span> — №1 — </span>
+                <span> Седона - не аттракцион для туристов, там <br>
                   течёт своя жизнь</span> </p>
               <img src="img/real-town.jpg"  alt="Настоящий городок">
             </li>
@@ -54,19 +51,19 @@
               <ul class="advantages-list">
                 <li>
                   <span><img src="svg/icon-1.svg" alt="Иконка дом"></span>
-                  <h3 class="minor-slogan-black">Жильё</h3>
+                  <h3 class="minor-slogan">Жильё</h3>
                   <p>Рекомендуем пожить в настоящем <br>
                       мотеле, как в кино </p>
                 </li>
                 <li>
                   <span><img src="svg/icon-3.svg" alt="Иконка бургер"></span>
-                  <h3 class="minor-slogan-black">Еда</h3>
+                  <h3 class="minor-slogan">Еда</h3>
                   <p>Всегда заказывайте фирменный бургер,<br>
                       вы не разочаруетесь! </p>
                 </li>
                 <li>
                   <span><img src="svg/icon-2.svg" alt="Иконка сувенир"></span>
-                  <h3 class="minor-slogan-black">Сувениры</h3>
+                  <h3 class="minor-slogan">Сувениры</h3>
                   <p>Не только китайского, но и местного <br>
                     производства!</p>
                 </li>
@@ -76,31 +73,31 @@
               <!-- Здесь по логике напрашивается <ol>, т.к. тут идет перечисление с пронумерованными причинами.
                но если исползовать <ol>, этот блок уезжает вправо и я не могу заставить его встать на место-->
               <img src="img/devils-bridge.jpg" alt="Мост дьявола" >
-              <p class="devils-blidge"><span class="minor-slogan-white"> там есть <br> мост дьявола <br> </span>
-               <span> - №2 - <br>
-                  Да, по нему можно пройти! Если конечно <br>
+              <p class="true-town-devils-blidge"><span class="minor-slogan"> там есть <br> мост дьявола <br> </span>
+                <span> — №2 — </span>
+                 <span>  Да, по нему можно пройти! Если конечно <br>
                   вы осмелитесь </span></p>
             </li>
           </ol>
           <ol class="reasons-grey" start="3">
             <li>
-              <p><span class="minor-slogan-black">небольшая <br> площадь<br></span>
-               <span> - №3 - <br>
-                  все достопримечательности <br>
+              <p><span class="minor-slogan">небольшая <br> площадь<br></span>
+                  <span> — №3 — </span>
+                  <span>  все достопримечательности <br>
                   находятся очень близко </span></p>
             </li>
 
             <li >
-              <p><span class="minor-slogan-black">красивая <br> дорога<br></span>
-                  <span> - №4 - <br>
-                ехать в седону из лас-вегаса совсем<br>
+              <p><span class="minor-slogan">красивая <br> дорога<br></span>
+                  <span> — №4 — </span>
+                  <span> ехать в седону из лас-вегаса совсем<br>
                 не скучно! </span></p>
             </li>
 
             <li >
-              <p><span class="minor-slogan-black">мало <br>туристов <br></span>
-               <span>- №5 - <br>
-                большинство едет в гранд каньон <br>
+              <p><span class="minor-slogan">мало <br>туристов <br></span>
+                  <span> — №5 — </span>
+                  <span>  большинство едет в гранд каньон <br>
                 и толпится там </span></p>
             </li>
           </ol>
@@ -112,7 +109,7 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </section>
 
-        <section> <!--В ТЗ написано: "Блок карты: достаточная реализация — обычное изображение"-->
+        <section class="map"> <!--В ТЗ написано: "Блок карты: достаточная реализация — обычное изображение"-->
           <img src="png/map.png" width="1199" height="594" alt="Карта окрестностей Седоны">
         </section>
       </main>
@@ -138,8 +135,9 @@
           </section>
       </footer>
     </div>
-      <section>
+
         <!-- Форма поиска гостиницы -->
+        <!-- Почему-то форма меняет свое расположение при изменении масштаба страницы не очень понял в чем дело. -->
       <form class="find-hotel-form" action="index.html" method="post">
         <button type="button" class="find-hotel-button"> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button> <!-- Я не понял, должна ли это быть ссылка/кнопка. Пока оставил как легенду-->
         <fieldset class="find-global">
@@ -169,7 +167,7 @@
           </fieldset>
       </form>
 
-      </section>
+
     </div>
   </body>
 

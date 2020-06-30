@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru"> <!-- Это страница-заглушка-->
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -11,24 +11,20 @@
   <body>
     <div class="body">
       <div class="main-page">
-        <header class="header">
-          <nav class="main-navigation">
-            <ul class="navigation-list">
-              <li><a href="blank.html">Информация</a></li>
-              <li><a href="blank.html">Фото и видео</a></li>
-              <li><a href="index.html"> <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA"></a> </li>
-              <li><a href="blank.html">Карта штата</a></li>
-              <li><a href="inner.html">Гостиницы</a></li>
-            </ul>
-          </nav>
-        </header>
-
-        <main >
-
+      <header class="header">
+        <nav class="main-navigation">
+          <ul class="navigation-list">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="index.html"> <img src="svg/logo-sedona.svg" width="138" height="70" alt="Логотип SEDONA"></a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
           <section>
-            <!--Здесь будет фильтр с гостиницами -->
           <form class="inner-filter" action="index.html" method="post">
-            <!--Стили пока не подключил -->
             <div class="filter">
               <fieldset>
                 <legend>инфраструктура:</legend>
@@ -54,13 +50,16 @@
                 <legend>стоимость в сутки (р):</legend>
                 <!-- Пока сделал через <input type="text" как сделать вывод цифры Min и Max я не совсем понимаю. -->
                 <div class="filter-element">
-                  <input type="text" name="cost-from" id="cost-from" value="от 0" min="0">
-                  <input type="text" name="cost-to" id="cost-to" value="до 3000" min="0">
+                  <input type="text" name="cost-from" id="cost-from" value="0" min="0">
+                  <img src="svg/rectangle.svg">
+                  <input type="text" name="cost-to" id="cost-to" value="3000" min="0">
                 </div>
                 <!-- Попробовал ещё сделать через два ползунка и <output>, но output почему-то не отображается как отдельное поле в принципе :( -->
 
-                <div class="filter-element">
+                <div class="filter-buttons">
                   <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
+                  <img class="scroll-1" src="svg/long.svg">
+                  <img class="scroll-2" src="svg/long-grey.svg">
                   <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Уменьшить цену"> </button>
                 </div>
 
@@ -78,8 +77,8 @@
                   <li><a href="#">По рейтингу</a></li>
                 </ul>
               <div>
-                <a href="#"> <svg class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 10L0 0h11"/></svg> </a>
                 <a href="#"> <svg  class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 0L0 10h11z"/></svg> </a>
+                <a href="#"> <svg class="svg-link" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 10L0 0h11"/></svg> </a>
               </div>
               </div>
           </section>
