@@ -265,6 +265,7 @@
   .price-button {
     background: none;
     border: none;
+    cursor:pointer;
   }
 
   .show-button {
@@ -277,6 +278,7 @@
     margin-left: 90px;
     border: 2px solid white;
     border-radius: 2px;
+    cursor:pointer;
   }
 
     fieldset .filter-element {
@@ -298,6 +300,7 @@
     width: 317px;
     justify-content: space-between;
     padding: 0;
+    cursor:pointer;
   }
 
     .scroll-1 {
@@ -579,11 +582,11 @@
     margin-top: 47px;
   }
 
-
   .interested {
-    height: 260px;
+    min-height: 260px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 0;
   }
 
   .interested h2 {
@@ -663,18 +666,25 @@
 
 /* find hotel форма поиска отелей */
 
+  .find {
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    padding: 0;
+    margin-left: 316px;
+    margin-top: 36px;
+    margin-bottom: 0;
+  }
+
   .find-hotel-form {
     display: flex;
     flex-direction: column;
     width: 568px;
-    max-height: 481px;
-    margin-left: auto;
-    margin-right: auto;
+    max-height: 395px;
     background-color: white;
     padding: 0;
     position: absolute;
-    top: 2083px;
-    left: 560px;
+    bottom: -254%;
   }
 
   .find-global {
@@ -686,6 +696,7 @@
     padding-top: 55px;
     padding-right: 0;
     padding-left: 0;
+
   }
 
   .date-people {
@@ -748,9 +759,10 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
-    height: 38px;
+    height: 40px;
     width: 39px;
     border: none;
+    padding: 0;
   }
 
   .input-small:hover {
@@ -789,6 +801,7 @@
   /* Buttons */
   .find-hotel-button {
     background-color: var(--basic-chocolate);
+    text-transform: uppercase;
     width: 568px;
     height: 86px;
     color: var(--basic-white);
@@ -797,20 +810,36 @@
     line-height: 26px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding: 0;
     border: none;
+    cursor:pointer;
   }
 
   .find-hotel-button:hover {
     background-color: var(--darker-chocolate);
     color: var(--basic-white);
+    border: none;
   }
   .find-hotel-button:active {
     background-color: var(--darkest-chocolate);
     color: var(--basic-white);
+    border: none;
   }
 
   .input-small-button {
     color: var(--dark-grey);
+    cursor:pointer;
+    background-color: var(--brighter-grey);
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 40px;
+    width: 39px;
+    border: none;
+    padding: 0;
   }
 
   .input-small-button:hover {
@@ -844,6 +873,21 @@
     background-color: var(--darkest-blue);
   }
 
+  .adults-number {
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-right: 50px;
+  }
+
+  .kids-number {
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+
 /* кнопки для inner */
 
   .details {
@@ -858,6 +902,7 @@
     height: 27px;
     width: 110px;
     border: none;
+    cursor: pointer;
   }
 
   .details:hover {
@@ -881,6 +926,7 @@
     width: 142px;
     border: none;
     margin-left: 6px;
+    cursor: pointer;
   }
 
   .book:hover {
