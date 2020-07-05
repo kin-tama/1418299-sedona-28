@@ -674,6 +674,7 @@
     margin-left: 316px;
     margin-top: 36px;
     margin-bottom: 0;
+    position: relative;
   }
 
   .find-hotel-form {
@@ -684,6 +685,7 @@
     background-color: white;
     padding: 0;
     position: absolute;
+    margin-top: 95px;
   }
 
   .find-global {
