@@ -214,6 +214,8 @@
     font-size: 16px;
     font-weight: bold;
     padding: 0;
+    position: relative;
+    right: 15px;
   }
 
   .filter fieldset ul {
@@ -226,7 +228,6 @@
     padding-top: 10px;
     justify-content: space-between;
     align-items: flex-start;
-
   }
 
   .cost-filter  {
@@ -260,6 +261,37 @@
     font-weight: bold;
     padding: 0;
     text-align: left;
+  }
+
+  .filter label {
+    cursor: pointer;
+  }
+
+  .filter-checkbox::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../svg/checkbox-off.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
+  }
+
+  .filter-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -45px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("../svg/checkbox-on.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    border: none;
   }
 
   .price-button {
@@ -303,15 +335,14 @@
     cursor:pointer;
   }
 
-    .scroll-1 {
-      position: absolute;
-      top: 167px;
-    }
-    .scroll-2 {
-      position: absolute;
-      top: 167px;
-    }
-
+  .scroll-1 {
+    position: absolute;
+    top: 167px;
+  }
+  .scroll-2 {
+    position: absolute;
+    top: 167px;
+  }
 
 /* Main navigation */
 
@@ -717,8 +748,7 @@
     font-weight: bold;
   }
 
-  .date-people label:last-child { /* пытаюсь поменять размер лейбла "дети", но почему-то ничего не работает,
-    хотя я вроде все правильно сделал? */
+  .date-people label:last-child {
     width: 68px;
     margin-right: 20px;
     text-align: center;

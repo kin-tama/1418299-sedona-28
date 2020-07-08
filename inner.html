@@ -29,9 +29,9 @@
               <fieldset>
                 <legend>инфраструктура:</legend>
                   <ul>
-                    <label for="basin"> <input type="checkbox" name="basin" id="basin" checked>Бассейн</label>
-                    <label for="parking"> <input type="checkbox" name="parking" id="parking">Парковка</label>
-                    <label for="wi-fi"> <input type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
+                    <label for="basin"> <input class="visually-hidden filter-checkbox" type="checkbox" name="basin" id="basin" checked>Бассейн</label>
+                    <label for="parking"> <input class="visually-hidden filter-checkbox" type="checkbox" name="parking" id="parking">Парковка</label>
+                    <label for="wi-fi"> <input class="visually-hidden filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
                   </ul>
               </fieldset>
             </div>
@@ -39,22 +39,20 @@
               <fieldset>
                 <legend>тип жилья:</legend>
                   <ul>
-                    <label for="hotel"> <input type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
-                    <label for="motel"> <input type="checkbox" name="motel" id="motel" checked>Мотель</label>
-                    <label for="apartments"> <input type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
+                    <label for="hotel"> <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
+                    <label for="motel"> <input class="visually-hidden filter-checkbox" type="checkbox" name="motel" id="motel" checked>Мотель</label>
+                    <label for="apartments"> <input class="visually-hidden filter-checkbox" type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
                   </ul>
               </fieldset>
             </div>
             <div class="cost-filter">
               <fieldset>
                 <legend>стоимость в сутки (р):</legend>
-                <!-- Пока сделал через <input type="text" как сделать вывод цифры Min и Max я не совсем понимаю. -->
                 <div class="filter-element">
                   <input type="text" name="cost-from" id="cost-from" value="0" min="0">
                   <img src="svg/rectangle.svg">
                   <input type="text" name="cost-to" id="cost-to" value="3000" min="0">
                 </div>
-                <!-- Попробовал ещё сделать через два ползунка и <output>, но output почему-то не отображается как отдельное поле в принципе :( -->
 
                 <div class="filter-buttons">
                   <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
@@ -71,7 +69,6 @@
               <span class="slogan">Найдено: 3</span><br>
               <h3>Сортировка:</h3>
                 <ul class="sort-list">
-                  <!-- Почему-то если делать такие вещи списком, слева по умолчанию появляется какой-то странный отсутп. На index у меня тоже была такая проблема. Как с этим бороться? -->
                   <li><a href="#">По цене</a></li>
                   <li><a href="#">По типу</a></li>
                   <li><a href="#">По рейтингу</a></li>
@@ -90,7 +87,6 @@
                     <img src="img/amara.jpg" alt="Amara Resort & Spa" width="135" height="90">
                   </div>
                   <div class="hotel-list">
-                    <!-- здесь снова проблема со странными отступами. если я делаю "Amara Resort & Spa" заголовком, появлябется странный отступ сверху, который вообще ничем не убирается. Что делать? И надо ли её делать заголовком? -->
                     <h2 class="hotel-name">Amara Resort & Spa</h2>
                     <p> <span class="hotel-type">Гостиница</span> <span class="hotel-type"> От 4000 Р.</span> </p>
                     <button class="details" type="button">Подробнее</button>
@@ -112,7 +108,6 @@
                     <img src="img/desert-q-inn.jpg" alt="Desert Quail Inn" width="135" height="90">
                   </div>
                   <div class="hotel-list">
-                    <!-- см комментарий выше -->
                     <h2 class="hotel-name">Desert Quail Inn</h2>
                     <p><span class="hotel-type">Мотель</span> <span  class="hotel-type"> От 3000 Р.</span></p>
                     <button class="details" type="button">Подробнее</button>
@@ -156,7 +151,7 @@
           </section>
 
           <section>
-            <h2 class="visually-hidden">Мы в социальных сетях</h2> <!-- Указал класс "visually-hidden"-->
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="media-list">
               <li><a href="https://twitter.com/"> <img src="svg/twitter.svg" alt="twitter"> </a></li>
               <li><a href="https://ru-ru.facebook.com/"> <img src="svg/fb-icon.svg" alt="facebook"> </a></li>
