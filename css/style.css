@@ -52,12 +52,14 @@
   }
 
   .visually-hidden {
-    position: absolute;
     clip: rect(0 0 0);
     width: 1px;
     height: 1px;
     margin: 1px;
     font-size: 0px;
+    border: none;
+    background: none;
+    display: none;
   }
 
 /* flex */
@@ -278,6 +280,7 @@
     background-size: auto;
     background-repeat: no-repeat;
     border: none;
+    cursor: pointer;
   }
 
   .filter-checkbox:checked::after {
@@ -292,6 +295,7 @@
     background-size: auto;
     background-repeat: no-repeat;
     border: none;
+    cursor: pointer;
   }
 
   .price-button {
