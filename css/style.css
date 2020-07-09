@@ -62,6 +62,10 @@
     display: none;
   }
 
+  .hide {
+  visibility: hidden;
+}
+
 /* flex */
 
   .page {

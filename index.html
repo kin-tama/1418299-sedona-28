@@ -108,25 +108,25 @@
             <div class="find">
               <button type="button" class="find-hotel-button"> поиск гостиницы в седоне</button>
               <form class="find-hotel-form" action="index.html" method="post">
-                <fieldset class="find-global">
+                <fieldset class="find-global ">
                     <div class="find-field">
                       <div class="date-people">
                         <label for="date_in" >Дата заезда:</label>
-                        <input class="input" type="text" name="date_in" id="date_in" value="24 апреля 2017">
+                        <input class="input" type="text" name="date_in" id="date_in" value="24 апреля 2017" required>
                       </div>
                       <div class="date-people">
                         <label for="date_out">Дата выезда:</label>
-                        <input class="input" type="text" name="date_out" id="date_out" value="4 июля 2017">
+                        <input class="input" type="text" name="date_out" id="date_out" value="4 июля 2017" required>
                       </div>
                       <div class="date-people">
                         <span class="adults-number" for="adults">Взрослые:</span>
                         <button class="input-small-button" type="button" name="minus-adults" id="minus-adults">-</button>
-                        <input class="input-small" type ="number" name="adults" id="adults">
+                        <input class="input-small adults" type ="number" name="adults" id="adults" required>
                         <button class="input-small-button"  type="button" name="plus-adults" id="plus-adults">+</button>
 
                         <span class="kids-number" for="kids-number">Дети:</span>
                         <button class="input-small-button" type="button" name="minus-kids" id="minus-kids">-</button>
-                        <input class="input-small" type="number" name="kids-number" id="kids-number">
+                        <input class="input-small kids" type="number" name="kids-number" id="kids-number" required>
                         <button class="input-small-button" type="button" name="plus-kids" id="plus-kids">+</button>
                       </div>
                       <button class="find-buton" type="submit" name="submit">найти</button><br>
