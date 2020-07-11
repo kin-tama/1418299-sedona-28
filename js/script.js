@@ -7,6 +7,6 @@ formButton.addEventListener("click", function (evt) {
 findForm.classList.toggle("hide");
 });
 
-findForm.addEventListener("submit", function (evt) {
+findForm.addEventListener("submit", function () {
 localStorage.setItem("kidsNumber", kidsNumber.value);
 localStorage.setItem("adultsNumber", adultsNumber.value);});

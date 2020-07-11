@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -24,24 +25,24 @@
       </header>
       <main class="main">
           <section>
-          <form class="inner-filter" action="index.html" method="post">
-            <div class="filter">
+          <form class="inner-filter" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="filter infrastructure">
               <fieldset>
                 <legend>инфраструктура:</legend>
                   <ul>
-                    <label for="basin"> <input class="visually-hidden filter-checkbox" type="checkbox" name="basin" id="basin" checked>Бассейн</label>
-                    <label for="parking"> <input class="visually-hidden filter-checkbox" type="checkbox" name="parking" id="parking">Парковка</label>
-                    <label for="wi-fi"> <input class="visually-hidden filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi">WI-FI</label>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="basin" id="basin" checked> <label for="basin"> Бассейн</label> </li>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="parking" id="parking"> <label for="parking">Парковка</label> </li>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="wi-fi" id="wi-fi">  <label for="wi-fi"> WI-FI</label> </li>
                   </ul>
               </fieldset>
             </div>
-            <div class="filter">
+            <div class="filter housing-type">
               <fieldset>
                 <legend>тип жилья:</legend>
                   <ul>
-                    <label for="hotel"> <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" id="hotel" checked>Гостиница</label>
-                    <label for="motel"> <input class="visually-hidden filter-checkbox" type="checkbox" name="motel" id="motel" checked>Мотель</label>
-                    <label for="apartments"> <input class="visually-hidden filter-checkbox" type="checkbox" name="apartments" id="apartments" checked>Апартаменты</label>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="hotel" id="hotel" checked> <label for="hotel">Гостиница</label> </li>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="motel" id="motel" checked> <label for="motel">Мотель</label> </li>
+                    <li class="filter-list"> <input class="hide filter-checkbox" type="checkbox" name="apartments" id="apartments" checked> <label for="apartments">Апартаменты</label> </li>
                   </ul>
               </fieldset>
             </div>
@@ -49,21 +50,21 @@
               <fieldset>
                 <legend>стоимость в сутки (р):</legend>
                 <div class="filter-element">
-                  <input type="text" name="cost-from" id="cost-from" value="0" min="0">
-                  <img src="svg/rectangle.svg">
-                  <input type="text" name="cost-to" id="cost-to" value="3000" min="0">
+                  <input type="number" name="cost-from" id="cost-from" value="0" min="0">
+                  <img src="svg/rectangle.svg" alt="">
+                  <input type="number" name="cost-to" id="cost-to" value="3000" min="0">
                 </div>
 
                 <div class="filter-buttons">
                   <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Увеличить цену"> </button>
-                  <img class="scroll-1" src="svg/long.svg">
-                  <img class="scroll-2" src="svg/long-grey.svg">
+                  <img class="scroll-1" src="svg/long.svg" alt="">
+                  <img class="scroll-2" src="svg/long-grey.svg" alt="">
                   <button class="price-button" type="button"> <img src="svg/filter-button.svg" alt="Уменьшить цену"> </button>
                 </div>
 
-              <button class="show-button" type="button">Показать</button>
+              <button class="show-button" type="submit">Показать</button>
+              </fieldset>
             </div>
-               </fieldset>
             </form>
             <div class="inner-sort">
               <span class="slogan">Найдено: 3</span><br>
@@ -100,7 +101,7 @@
                       <svg class="svg-star" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
                     </span>
                     <p class="rating">Рейтинг: 8,5</p>
-                  <div class="rating-box">
+                  </div>
                 </li>
 
                 <li class="sort-hotels-noborder">
