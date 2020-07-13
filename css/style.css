@@ -609,7 +609,7 @@
     background-image: url("../img/background-sedona.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--brighter-grey);
+    background-color: var(--basic-blue);
     box-sizing: border-box;
     width: 1200px;
     padding-top: 77px;
