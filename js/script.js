@@ -4,7 +4,7 @@ var kidsNumber = findForm.querySelector(".kids");
 var adultsNumber = findForm.querySelector(".adults");
 
 formButton.addEventListener("click", function (evt) {
-findForm.classList.toggle("hide");
+findForm.classList.toggle("form-hide");
 });
 
 findForm.addEventListener("submit", function () {
