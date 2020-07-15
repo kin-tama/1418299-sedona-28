@@ -98,7 +98,6 @@
     min-height: 330px;
     width: 1200px;
     justify-content: space-around;
-    align-items: center;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -109,14 +108,20 @@
 
   .advantages-list li{
     margin-top: 0px;
+    width: 300px;
+    min-height: 200px;
+    padding-top: 60px;
+    padding-right: 10px;
   }
 
   .advantages-list li:first-child{
     margin-left: 10px;
+    padding-right: 15px;
   }
 
-  .advantages-list li:nth-child(2){
-    margin-left: 10px;
+  .advantages-list img {
+    height: 75px;
+    width: 75px;
   }
 
   .advantages-list li p {
@@ -124,8 +129,8 @@
   }
 
   .advantages-list h3 {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 18px;
+    margin-bottom: 25px;
   }
 
   .reasons-blue {
@@ -177,6 +182,7 @@
     margin-top: 14px;
     font-size: 12px;
     margin-bottom: 0;
+    max-width: 50px;
   }
 
   .inner-sort .slogan {
@@ -251,6 +257,7 @@
     display: flex;
     background-image: url("../img/background.jpg");
     background-color: var(--darkest-blue);
+    max-width: 1200px;
   }
 
   .filter fieldset{
@@ -263,10 +270,13 @@
     margin-right: 20px;
     margin-top: 25px;
     margin-bottom: 13px;
+    max-width: 200px;
+
   }
 
   .housing-type fieldset {
-    margin-left: 78px;
+    margin-left: 15px;
+    width: 200px;
   }
 
   .filter fieldset legend{
@@ -274,14 +284,12 @@
     font-weight: bold;
     padding: 0;
     margin: 0;
-    display: inline-block;
+    display: block;
+    width: 200px;
+    text-align: left;
     vertical-align: top;
     margin-bottom: 10px;
-  }
 
-  .housing-type legend {
-    position: relative;
-    left: -25px;
   }
 
   .filter fieldset ul {
@@ -307,7 +315,7 @@
     min-height: 136px;
     width: 317px;
     margin-top: 25px;
-    margin-left: 310px;
+    margin-left: 250px;
   }
 
   .cost-filter fieldset {
@@ -731,25 +739,30 @@
     background-size: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     box-sizing: border-box;
     width: 1200px;
     min-height: 256px;
     line-height: 24px;
+
   }
 
   .reasons-grey li   {
-    padding-top: 5px;
+    width: 250px;
 }
 
   .reasons-grey li:first-child {
-    padding-left: 25px;
+    margin-left: 75px;
   }
 
   .reasons-grey li:nth-child(2) {
-    padding-left: 20px;
+    width:300px;
+    margin-left: 125px;
   }
+
+  .reasons-grey li:last-child {
+    margin-left: 125px;
+  }
+
 
   .reasons-grey div  {
     display: block;
@@ -761,12 +774,14 @@
   .reasons-grey h3  {
     padding: 0;
     margin: 0;
+    padding-top: 3px;
   }
 
   .reasons-grey p  {
     padding: 0;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 25px;
+    line-height: 21px;
   }
 
 
@@ -785,7 +800,9 @@
     margin: 0;
     line-height: 21px;
     padding-top: 10px;
+    max-width: 320px;
   }
+
 
   .interested {
     min-height: 220px;
@@ -824,7 +841,7 @@
     justify-content: space-around;
     align-items: center;
     min-width: 1200px;
-    height: 120px;
+    min-height: 120px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.9);
@@ -834,14 +851,17 @@
 
   .footer section {
     margin-bottom: 20px;
+    max-width: 400px;
   }
 
   .footer section:first-child {
     margin-left: 60px;
+    max-width: 400px;
   }
 
   .footer section h2 {
     margin-bottom: 10px;
+    max-width: 400px;
   }
 
   .footer section p {
@@ -925,18 +945,6 @@
     z-index: 1;
   }
 
-  @keyframes disappear {
-  20%  { transform: translateX(-150px); }
-  100% { transform: translateX(2000px); }
-  }
-
-  .form-hide {
-    display: block;
-    animation-name: disappear;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-  }
-
   .find-global {
     display: flex;
     flex-direction: column;
@@ -988,11 +996,13 @@
   .calendar:hover {
     background-image: url("../svg/calendar-black.svg");
     border: none;
+    outline: none;
   }
 
   .calendar:active {
     background-image: url("../svg/calendar-blue.svg");
     border: none;
+    outline: none;
   }
 
   .find-field {

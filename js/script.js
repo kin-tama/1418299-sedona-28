@@ -3,8 +3,9 @@ var findForm = document.querySelector(".find-hotel-form");
 var kidsNumber = findForm.querySelector(".kids");
 var adultsNumber = findForm.querySelector(".adults");
 
+findForm.classList.add("hide");
 formButton.addEventListener("click", function (evt) {
-findForm.classList.toggle("form-hide");
+findForm.classList.toggle("hide")
 });
 
 findForm.addEventListener("submit", function () {
